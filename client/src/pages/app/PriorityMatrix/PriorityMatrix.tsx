@@ -15,7 +15,7 @@ export function PriorityMatrix () {
 
   return (
     <FullPageFrame>
-      <div style={{ border: 'solid 1px black' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <Matrix items={items} xLabel="Effort" yLabel="Impact" />
         <div style={{ margin: '2rem 0' }}>
           <input value={text} onChange={onInputChange} />

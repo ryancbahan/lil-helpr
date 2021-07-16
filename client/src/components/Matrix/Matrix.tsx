@@ -26,10 +26,10 @@ export function Matrix ({ items, xLabel, yLabel }: MatrixProps) {
   const constraintsRef = useRef<HTMLDivElement>(null)
 
   return (
-    <div style={{ display: 'flex', fontSize: '2rem' }}>
+    <div style={{ display: 'flex', fontSize: '2rem', position: 'relative' as 'relative' }}>
       {yLabel && (
-        <div style={{ display: 'flex', alignItems: 'center', margin: '0 0.5rem' }}>
-          <div style={{ transform: 'rotate(-90deg)', marginBottom: '4rem' }}>{yLabel}</div>
+        <div style={{ position: 'absolute' as 'absolute', top: '42.5%', left: '-5rem' }}>
+          <div style={{ transform: 'rotate(-90deg)' }}>{yLabel}</div>
         </div>
       )}
       <div>
