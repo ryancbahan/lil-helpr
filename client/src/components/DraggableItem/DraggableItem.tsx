@@ -1,4 +1,4 @@
-import React, { RefObject } from 'react'
+import React, { RefObject, useState } from 'react'
 import { ITEM_SIZE } from '../../utils/constants'
 import { motion, useMotionValue } from 'framer-motion'
 import { theme } from '../../theme'
@@ -22,11 +22,11 @@ const Circle = {
   borderRadius: `${ITEM_SIZE}rem`,
   border: `solid 1px ${theme.lightGrey}`,
   boxShadow: `0.25rem 0.25rem 1rem ${theme.lighterGrey}`,
-  background: '#9b59b6',
   marginRight: '0.5rem'
 }
 
 export const DraggableItem = React.forwardRef(({ name }: DraggableItemProps, ref) => {
+  const [color] = useState(`#${Math.floor(Math.random() * 16777215).toString(16)}`)
   const x = useMotionValue<number>(0)
   const y = useMotionValue<number>(0)
 
@@ -43,7 +43,7 @@ export const DraggableItem = React.forwardRef(({ name }: DraggableItemProps, ref
       dragMomentum={false}
       onDragEnd={onDragEnd}
     >
-      <div style={Circle} />
+      <div style={{ ...Circle, background: color }} />
       <p>{name}</p>
     </motion.div>
   )
