@@ -4,7 +4,7 @@ import { DraggableItem } from '../DraggableItem'
 import { ITEM_SIZE } from '../../utils/constants'
 
 const MatrixStyles = {
-  position: 'relative',
+  position: 'relative' as 'relative',
   display: 'grid',
   gridTemplateColumns: `${ITEM_SIZE * 4}rem ${ITEM_SIZE * 4}rem`,
   gridTemplateRows: `${ITEM_SIZE * 4}rem ${ITEM_SIZE * 4}rem`

@@ -14,8 +14,8 @@ const ItemStyles = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  position: 'absolute',
-  zIndex: '1',
+  position: 'absolute' as 'absolute',
+  ZIndex: '1',
   background: 'white',
   fontSize: '1rem'
 }
