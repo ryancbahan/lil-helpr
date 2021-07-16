@@ -1,4 +1,5 @@
 import React from 'react'
+import { theme } from '../../theme'
 
 export interface FullPageFrameProps {
   children: React.ReactElement
@@ -9,7 +10,8 @@ const FrameStyles = {
   height: '100vh',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'center'
+  justifyContent: 'center',
+  background: theme.lighterGrey
 }
 
 export function FullPageFrame ({ children }: FullPageFrameProps) {

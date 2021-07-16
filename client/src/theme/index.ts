@@ -1,3 +1,1 @@
-export const theme = {
-
-}
+export { theme } from './theme'

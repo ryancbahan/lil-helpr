@@ -7,7 +7,9 @@ const MatrixStyles = {
   position: 'relative' as 'relative',
   display: 'grid',
   gridTemplateColumns: `${ITEM_SIZE * 4}rem ${ITEM_SIZE * 4}rem`,
-  gridTemplateRows: `${ITEM_SIZE * 4}rem ${ITEM_SIZE * 4}rem`
+  gridTemplateRows: `${ITEM_SIZE * 4}rem ${ITEM_SIZE * 4}rem`,
+  gridGap: '0.5rem',
+  margin: '1rem'
 }
 
 export interface PriorityItem {
