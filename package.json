@@ -4,7 +4,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s client/src/theme",
     "build-storybook": "build-storybook",
     "chromatic": "npx chromatic --project-token=c362182efbe7"
   },
